@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>NavigationLinkSetPickList</members>
+        <members>NavigationMenuItemsController</members>
+        <members>StringSplitter</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>emailComposerScreen</members>
+        <members>mockCaseWrapUp</members>
+        <members>websiteFooter</members>
+        <members>websiteFooterItem</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Footer</members>
+        <members>Footer_Copyright</members>
+        <name>NavigationMenu</name>
+    </types>
+    <types>
+        <members>facebook</members>
+        <members>instagram</members>
+        <members>linkedin</members>
+        <members>twitter</members>
+        <name>StaticResource</name>
+    </types>
+    <version>63.0</version>
+</Package>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Website Footer</masterLabel>
+    <description>Configurable website footer component for Experience Cloud</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property 
+                name="maxWidth" 
+                type="String" 
+                default="1440px" 
+                label="Content Maximum Width" 
+                description="Maximum width of the footer content (e.g., 1280px, 100%)"
+            />
+            <property
+                name="overrideBackgroundColor"
+                type="Boolean"
+                default="false"
+                label="Override Theme Background Color"
+                description="Check to use custom background color instead of theme color. When checked, specify your custom color in the Background Color setting."
+            />
+            <property 
+                name="backgroundColor" 
+                type="Color" 
+                default="#F8F8F8" 
+                label="Background Color" 
+                description="Custom background color (only applies if override is checked)"
+            />
+            <property
+                name="overrideBottomBarColor"
+                type="Boolean"
+                default="false"
+                label="Override Theme Bottom Bar Color"
+                description="Check to use custom bottom bar color instead of theme color. When checked, specify your custom color in the Bottom Bar Color setting."
+            />
+            <property 
+                name="bottomBarColor" 
+                type="Color" 
+                default="#E8E8E8" 
+                label="Bottom Bar Color" 
+                description="Custom bottom bar color (only applies if override is checked)"
+            />
+            <property
+                name="overrideTextColor"
+                type="Boolean"
+                default="false"
+                label="Override Theme Text Color"
+                description="Check to use custom text color instead of theme color. When checked, specify your custom color in the Text Color setting."
+            />
+            <property 
+                name="textColor" 
+                type="Color" 
+                default="#333333" 
+                label="Text Color" 
+                description="Custom text color (only applies if override is checked)"
+            />
+            <property 
+                name="addressLine1" 
+                type="String" 
+                label="Address Line 1" 
+                default="11721 Telegraph Rd"
+            />
+            <property 
+                name="addressLine2" 
+                type="String" 
+                label="Address Line 2" 
+                default=""
+            />
+            <property 
+                name="city" 
+                type="String" 
+                label="City" 
+                default="Santa Fe Springs"
+            />
+            <property 
+                name="state" 
+                type="String" 
+                label="State" 
+                default="CA"
+            />
+            <property 
+                name="zipCode" 
+                type="String" 
+                label="Zip Code" 
+                default="90670"
+            />
+            <property 
+                name="phone" 
+                type="String" 
+                default="(100) 123-4567" 
+                label="Phone Number" 
+                description="Contact phone number"
+            />
+            <property 
+                name="copyrightText" 
+                type="String" 
+                default="© Copyright 2023 Salesforce | Connected University is not a real school. This is a demo site for Salesforce demo purposes only." 
+                label="Copyright Text" 
+                description="Copyright notice text"
+            />
+            <property 
+                name="footerMenuItems" 
+                type="String"
+                datasource="apex://NavigationLinkSetPickList"
+                label="Footer Navigation Menu"
+                description="The name of the Navigation Menu Linkset for the main footer section. Note: While all navigation menus across sites are shown, only select a navigation menu that shows your site name in parentheses, as others will not work."
+            />
+            <property 
+                name="copyrightMenuItems" 
+                type="String"
+                datasource="apex://NavigationLinkSetPickList"
+                label="Copyright Navigation Menu"
+                description="The name of the Navigation Menu Linkset for the copyright section. Note: While all navigation menus across sites are shown, only select a navigation menu that shows your site name in parentheses, as others will not work."
+            />
+            <property 
+                name="instagramUrl" 
+                type="String" 
+                default="https://www.instagram.com" 
+                label="Instagram URL" 
+                description="URL for the company Instagram profile"
+            />
+            <property 
+                name="twitterUrl" 
+                type="String" 
+                default="https://www.twitter.com" 
+                label="Twitter URL" 
+                description="URL for the company Twitter profile"
+            />
+            <property 
+                name="facebookUrl" 
+                type="String" 
+                default="https://www.facebook.com" 
+                label="Facebook URL" 
+                description="URL for the company Facebook profile"
+            />
+            <property 
+                name="linkedinUrl" 
+                type="String" 
+                default="https://www.linkedin.com" 
+                label="LinkedIn URL" 
+                description="URL for the company LinkedIn profile"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
